@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input id="location" type="text" placeholder="Enter city name" spellcheck="false">
+            <button onclick="getWeather()"><img src="./img/search.png" alt=""></button>
+        </div>
+        <div id="err"></div>
+        <div id="weather">
+            <h1 id="city">Manjeri</h1>
+
+            <img src="./img/rainy-day.png" id="weather-icon">
+            <h2 id="temp">32°C</h2>
+            <h3 id="weather-main">Cloudy</h3>
+            <div class="details">
+                <div class="col">
+                    <img src="./img/humidity.png" alt="">
+                    <div>
+                        <p id="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="./img/wind.png" alt="">
+                    <div>
+                        <p id="wind-speed">50%</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="./img/pressure.png" alt="">
+                    <div>
+                        <p id="pressure">50%</p>
+                        <p>Pressure</p>
+                    </div>
+                </div>
+                
+                    <div class="col">
+                        <img src="./img/sunrise.png" alt="">
+                        <div>
+                            <p id="sunrise">50%</p>
+                            <p>Sunrise</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="./img/sunset.png" alt="">
+                        <div>
+                            <p id="sunset">50%</p>
+                            <p>Sunset</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
