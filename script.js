@@ -5,6 +5,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function getWeather(){
     var location=document.getElementById('location').value;
+    const errElement = document.getElementById('err');
+    errElement.innerHTML = '';
+   
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=5b4bee0ba241d092159faf007e166080`)
     .then(response => response.json())
     .then(data => {

@@ -8,6 +8,8 @@
 body{
     background: rgb(164,87,121);
 background: radial-gradient(circle, rgba(164,87,121,1) 4%, rgba(148,187,233,1) 66%);
+
+
 }
 
 .card{
